@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    @font-face {
+      font-family: "Oswald";
+      src: url("file:///workspace/.grok/fonts/Oswald-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Oswald";
+      src: url("file:///workspace/.grok/fonts/Oswald-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Oswald";
+      src: url("file:///workspace/.grok/fonts/Oswald-Medium.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #0C1014;
+    }
+    .card {
+      position: relative;
+      width: 1200px;
+      height: 630px;
+      background:
+        radial-gradient(ellipse 70% 55% at 50% 58%, rgba(230, 179, 37, 0.13), transparent 62%),
+        radial-gradient(ellipse 90% 80% at 82% 72%, rgba(138, 144, 132, 0.16), transparent 55%),
+        linear-gradient(180deg, #12171c 0%, #0C1014 42%, #0a0d10 100%);
+      color: #EDE8DC;
+      font-family: "Oswald", "Liberation Sans Narrow", sans-serif;
+    }
+    .grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(237, 232, 220, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(237, 232, 220, 0.035) 1px, transparent 1px);
+      background-size: 40px 40px;
+      mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, #000 30%, transparent 80%);
+    }
+    .plate {
+      position: absolute;
+      inset: 22px;
+      border: 1px solid rgba(138, 144, 132, 0.45);
+      pointer-events: none;
+    }
+    .plate::after {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      border: 1px solid rgba(230, 179, 37, 0.28);
+    }
+    .machine {
+      position: absolute;
+      right: -20px;
+      bottom: 18px;
+      width: 760px;
+      height: 380px;
+      opacity: 0.34;
+    }
+    .lockup {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -52%);
+      text-align: center;
+      width: 820px;
+    }
+    .kicker {
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 0.42em;
+      color: #8A9084;
+      text-indent: 0.42em;
+      margin-bottom: 18px;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 128px;
+      line-height: 0.9;
+      letter-spacing: 0.16em;
+      color: #E6B325;
+      text-indent: 0.16em;
+      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.45), 0 18px 40px rgba(12, 16, 20, 0.55);
+    }
+    .rule {
+      width: 168px;
+      height: 3px;
+      background: #E6B325;
+      margin: 22px auto 16px;
+    }
+    .tagline {
+      font-weight: 400;
+      font-size: 26px;
+      letter-spacing: 0.08em;
+      color: #EDE8DC;
+    }
+    .footer {
+      position: absolute;
+      left: 48px;
+      right: 48px;
+      bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.28em;
+      color: #8A9084;
+      text-transform: uppercase;
+    }
+    .teeth {
+      position: absolute;
+      left: 48px;
+      right: 48px;
+      bottom: 0;
+      height: 14px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      opacity: 0.85;
+    }
+    .tooth {
+      width: 28px;
+      height: 14px;
+      background: #E6B325;
+      clip-path: polygon(12% 0, 88% 0, 100% 100%, 0 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="grid"></div>
+    <svg class="machine" viewBox="0 0 760 380" aria-hidden="true">
+      <!-- retroexcavadora silhouette -->
+      <g fill="#8A9084">
+        <circle cx="250" cy="300" r="58"/>
+        <circle cx="460" cy="308" r="48"/>
+        <path d="M175 278h310l18-52H332l-28-10H188z"/>
+        <path d="M318 216l8-92h92l28 92z"/>
+        <path d="M478 242l118-78 32 22-112 86z"/>
+        <path d="M582 148l92 8 18 62-86 12-28-40z"/>
+        <path d="M210 228L78 72l46-18 122 168z"/>
+        <path d="M78 72L-8 168l42 24 62-108z"/>
+        <path d="M-18 162l-78 58 28 32 64-52z"/>
+      </g>
+      <g fill="#0C1014">
+        <circle cx="250" cy="300" r="24"/>
+        <circle cx="460" cy="308" r="20"/>
+        <path d="M336 210l6-70h68l20 70z"/>
+      </g>
+    </svg>
+    <div class="lockup">
+      <div class="kicker">MÉXICO · MAQUINARIA PESADA</div>
+      <div class="title">PACHARA</div>
+      <div class="rule"></div>
+      <div class="tagline">Refacciones para maquinaria pesada</div>
+    </div>
+    <div class="footer">
+      <span>Hidráulica · Cucharones · Pernos</span>
+      <span>CASE · John Deere · JCB · CAT</span>
+    </div>
+    <div class="plate"></div>
+  </div>
+</body>
+</html>

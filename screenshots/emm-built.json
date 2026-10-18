@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "EMM PARTS — Refacciones para maquinaria pesada",
+      "hasCanvas": false,
+      "bodyTextLen": 2354,
+      "bodyTextHash": "defb77f96a6a426c78abeee39974908441f43b90bea625f12b8ff804314527f8",
+      "bodyTextPrefix": "Tabasco · Mérida · Campeche · Lun–vie 9:00 a 18:00 · Sáb 9:00 a ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/emm-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "EMM PARTS — Refacciones para maquinaria pesada",
+      "hasCanvas": false,
+      "bodyTextLen": 2218,
+      "bodyTextHash": "cf25a09e5986ecabac22ee5fabc439090039b15a8513efce96af7fcdbd3fcae2",
+      "bodyTextPrefix": "EMM PARTS DEL SURESTE TABASCO · MÉRIDA · CAMPECHE LA MÁQUINA NO ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/emm-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/emm-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

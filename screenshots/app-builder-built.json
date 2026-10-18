@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "PACHARA — Refacciones para maquinaria pesada",
+      "hasCanvas": false,
+      "bodyTextLen": 2281,
+      "bodyTextHash": "40c57b0ece77caa0b6b7546b2bb8e6c1b0bda1f34f4a611f2a6aeb26dd9eb83b",
+      "bodyTextPrefix": "Querétaro, México · Lunes a viernes · 9:00 a 18:00 442 149 0140 ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "PACHARA — Refacciones para maquinaria pesada",
+      "hasCanvas": false,
+      "bodyTextLen": 2164,
+      "bodyTextHash": "035fae3783f4578557690ad8f59fe36b90ed21017278ffbcc852306b5e41eeb8",
+      "bodyTextPrefix": "PACHARA MAQUINARIA PESADA QUERÉTARO · MÉXICO LA MÁQUINA NO ESPER",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
